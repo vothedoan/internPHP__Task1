@@ -1,0 +1,516 @@
+@import 'reset';
+$fontbody:'Open Sans', sans-serif;
+html{
+  scroll-behavior: smooth;
+} 
+body
+ {
+   width: 100%;
+   margin: 0 auto;
+   font-family:$fontbody; 
+   font-size: 16px;
+   color: #fff;
+   box-sizing: border-box;
+   text-align: center;
+   padding: 0 0;
+ }
+ .mycontainer
+ {
+   margin: 0 123px;
+ }
+ li
+ {
+  list-style: none;
+ }
+ a
+ {
+   text-decoration: none;
+   color: #616161;
+ }
+ .text--bold
+ {
+   font-weight: bold;
+ }
+ a:hover
+ {
+   text-decoration: none;
+ }
+ .section__title
+ {
+   position: relative;
+ }
+ .section__title::after
+ {
+   content: "";
+   position: absolute;
+   bottom:-30px;
+   width:100px;
+   margin-right: -50px;
+   right: 50%;
+   height: 5px;
+   background-color: #00a8ff;
+ }
+ .section__title::before
+ {
+  content: "";
+  position: absolute;
+  bottom:-40px;
+  right: 50%;
+  margin-right: -35px;
+  width:70px;
+  height: 3px;
+  background-color: #00a8ff;
+ }
+ .button
+ {
+   border: 1px solid rgba(0, 0, 0, 0.5);
+   border-radius: 3px;
+   padding:15px 43px;
+ }
+ header
+{
+  padding-top: 54px;
+  overflow: hidden;
+  background-image: url("../images/bg-head.jpg");
+}
+ .header
+ {
+
+   overflow: hidden;
+   height: 790px;
+   position: relative;
+   padding-top:54px;
+   background-image: url("../images/addimagehere.jpg");
+   &__title
+   {
+    font-family: $fontbody;
+     font-size: 44px;
+     color: #00a5ff;
+     position: absolute;
+     top: 40%;
+     left: 37%;
+     width: 25%;
+   }
+   &__content
+   {
+    font-family: $fontbody;
+     font-size: 20px;
+     position: absolute;
+     top:50%;
+     left: 8%;
+     width: 85%;
+   }
+   &__dropdown
+   {
+     box-sizing: border-box;
+     border: 1px solid #fff;
+     width: 50px;
+     height: 50px;
+     border-radius: 50px;
+     position: absolute;
+     bottom: 10%;
+     left: 47%;
+     padding: 15px;
+   }
+ }
+ .header__logo
+ {
+   font-size: 36.4px;
+   float: left;
+   margin-left: 200px;
+   a{
+    color: #00a8ff;
+    font-weight: bold;
+    font-family: 'MyriadPro-BoldCondI'
+   }
+ }
+ .header__menu
+ { 
+   margin-right: 100px;
+   float: right;
+    li{
+      display: inline-block;
+      margin: 10px;
+    }
+    a{
+      color: #fff;
+      font-size: 16px;
+      font-family: 'Myriad Pro Regular'
+    }
+ }
+ .info
+ { 
+   overflow: hidden;
+   padding: 100px 0;
+   &__title
+   {  
+     font-family: $fontbody;
+     font-size: 30px;
+     color: #222222;
+     margin-top:50px;
+     margin-bottom: 56px;
+   }
+   &__content
+   {
+     color: #6c6c6c;
+     font-family: $fontbody;
+     font-size: 18px;
+     width: 80%;
+     margin-bottom: 31px;
+   }
+   .info__left
+ { float: left;
+   width: 50%;
+   text-align: left;
+   .button--readmore
+   {
+     width: 28%;
+     color: #222222;
+     padding: 15px 20px;
+   }
+ }
+ .info__right
+ {
+   float: left;
+   width: 50%;
+   &__image{
+      height: 80%;
+      width: 80%;
+   }
+ }
+ }
+ .character
+ {
+   padding-top: 100px;
+   padding-bottom: 168px;
+   background-image: url("../images/imagecharacter.jpg");
+   position: relative;
+   &__title
+   {
+    font-family: $fontbody;
+     font-size: 44px;
+     margin-bottom: 72px;
+   }
+   &__content
+   {
+     display: flex;
+     overflow: hidden;
+     &__item
+     {
+       &__image
+       {
+         margin-left: 8%;
+       }
+       width: calc(25% - 20px);
+       margin: 10px;
+       &__title
+       {
+        font-family: $fontbody;
+         font-size: 20px;
+         font-weight: bold;
+         margin-top: 10px;
+         margin-bottom: 20px;
+       }
+       &__description
+       {
+         font-family: $fontbody;
+         font-size: 14px;
+       }
+     }
+   }
+   &__footer
+   {
+     position: absolute;
+     bottom: 64px;
+     left: 650px;
+   }
+ }
+ .crew
+ {
+   padding: 100px 0;
+   .button--crew
+   {
+     padding: 15px 20px;
+     width: 15%;
+     margin: auto;
+   }
+
+   &__title
+   {
+    font-family: $fontbody;
+     font-size: 44px;
+     color: #222222;
+     margin-bottom: 100px;
+   }
+   &__content
+   {
+    font-family: $fontbody;
+     color: #6c6c6c;
+     margin-bottom: 20px;
+     font-style: italic;
+   }
+ }
+ .novellas
+ {
+   background-image: url("../images/image_novellas.jpg");
+   padding: 100px 0 170px 0;
+   position: relative;
+   &__title
+   {
+    font-family: $fontbody;
+     font-size: 44px;
+     margin-bottom: 130px;
+   }
+   &__content
+   {
+     display: flex;
+    .novellas__content--item
+    { 
+       float: left;
+       width:300px !important;
+       overflow: hidden;
+       height: 105px;
+       margin: 18px;
+       padding: 30px 30px;
+       box-sizing: border-box;
+       border: 1px solid #cbcbcb;
+       a{
+         font-family: $fontbody;
+         color: #cbcbcb;
+        }
+    }
+   }
+   
+   &__footer
+   {
+     position: absolute;
+     bottom: 100px;
+     left: 650px;
+   }
+ }
+ .ourworld
+ {
+   padding: 100px 0;
+   
+   &__title
+   {
+    font-family: $fontbody;
+     font-size: 44px;
+     color: #222222;
+     margin-bottom: 100px;
+   }
+   &__head
+   {
+    font-family: $fontbody;
+    color: #6c6c6c;
+    font-style: italic;
+    margin-bottom: 100px;
+   }
+    &__content
+    {
+      &__head
+     {
+      font-family: $fontbody;
+      color: #222222;
+      font-size: 18px;
+      overflow: hidden;
+      margin-bottom: 45px;
+     }
+      &__head__left
+      {
+        float: left;
+      }
+      &__head__right
+      {
+        float: right;
+      }
+      &__content--row
+      {
+        display: flex;
+        overflow: hidden;
+        margin-bottom: 10px;
+        &--item
+        {
+          margin: 10px;
+          width: calc(25% - 20px);
+        }
+      }
+
+    }
+}
+.bazzar
+{
+  background-image: url("../images/replace image here.jpg");
+  padding:100px 277px;
+  &__title
+  {
+    font-family: $fontbody;
+    font-size: 44px;
+    margin-bottom: 100px;
+  }
+  &__content
+  {
+    font-family: $fontbody;
+    margin-bottom: 20px;
+    font-style: italic;
+  }
+
+}
+.contact
+{
+  color: #808080;
+  padding: 100px 375px;
+  &__title
+  {
+    font-family: $fontbody;
+    font-size: 44px;
+    color: #222222;
+    margin-bottom: 100px;
+  }
+  &__content
+  {
+    font-family: $fontbody;
+    font-style: italic;
+    margin-bottom: 100px;
+  }
+  &__form
+  { 
+    font-family: $fontbody;
+    &--row
+    {
+      overflow: hidden;
+      width: 100%;
+      text-align: left;
+      margin-bottom: 10px;
+      &--item
+      {
+        margin:0 10px
+      }
+      .row--left
+      { text-align: left;
+        float: left;
+        width: calc(50% - 20px);
+      }
+      .row--right
+      {
+        text-align: left;
+        float: left;
+        width: calc(50% - 20px);
+      }
+    }
+   
+  }
+}
+.message__title
+{
+  margin-left: 10px;
+  margin-top: 20px;
+}
+.message__textarea
+{
+  width: calc(100% - 30px);
+}
+.button--from
+{
+  background-color: #00a8ff;
+  color: #fff;
+  border: 1px solid #00a8ff;
+  width: 165px;
+  height: 40px;
+  margin-right: 10px;
+  float: right;
+}
+footer
+{
+  font-family: $fontbody;
+  background-color: #222222;
+  font-size: 12px;
+  padding: 43px 133px;
+  overflow: hidden;
+  color:  #b2b2b2;
+}
+.footer__left
+{
+  float: left;
+}
+.footer__right
+{
+  float: right;
+  li{
+    display: inline-block;
+    border: 1px solid #b2b2b2;
+    border-radius: 50%;
+    width: 31px;
+    height: 31px;
+    box-sizing: border-box;
+    padding-top: 10px;
+    margin: 5px;
+  }
+}
+.dot--active
+{
+  color:#00a8ff
+}
+.info__title
+{
+  position: relative;
+}
+.info__title::after
+{
+  content: "";
+  background: #0096ff;
+  width: 100px;
+  height: 5px;
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+}
+.nav--active
+{
+  position: relative;
+}
+.nav--active::after
+{
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 3px;
+  right: 50%;
+  margin-right: -15px;
+  bottom: -10px;
+  background: #0096ff;
+}
+  #frm--mobile
+    {
+        display: none;
+    }
+    #character--mobile
+    {
+        display: none;
+    }
+    #novellas--mobile
+    {
+        display: none;
+    }
+    #frm--desk
+    {
+        display: block;
+    }
+    #character--desk
+    {
+        display: block;
+    }
+    #novellas--desk
+    {
+        display: block;
+    }
+    #head--mobile
+    {
+      display: none;
+    }
+    #head--desk
+    {
+      display: block;
+    }
+
+@import 'reponsive';
